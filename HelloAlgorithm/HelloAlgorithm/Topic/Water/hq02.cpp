@@ -7,7 +7,6 @@
 //
 
 #include "hq02.hpp"
-#include "Tool.hpp"
 
 const int N = 1e6 + 7;
 const int K = 100;

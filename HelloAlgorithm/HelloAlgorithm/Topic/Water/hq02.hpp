@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <iostream>
+#include "Tool.hpp"
 
 class Hq02 {
 public:
