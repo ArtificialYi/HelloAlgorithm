@@ -7,9 +7,10 @@
 //
 
 #include <iostream>
+#include "hq02.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    Hq02 * hq02 = new Hq02();
+    int res = hq02->main();
+    return res;
 }
