@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		B45C7C932068BB4C001E9D1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B45C7C922068BB4C001E9D1C /* main.cpp */; };
 		B45C7CAE2068D2BC001E9D1C /* Tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B45C7CAC2068D2BC001E9D1C /* Tool.cpp */; };
-		B45C7CB12068D31D001E9D1C /* hq02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B45C7CAF2068D31D001E9D1C /* hq02.cpp */; };
+		B487294D2078C804007A7B7D /* hq02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B487294B2078C804007A7B7D /* hq02.cpp */; };
+		B48729502078C810007A7B7D /* ThreeNumSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B487294E2078C810007A7B7D /* ThreeNumSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		B45C7C922068BB4C001E9D1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B45C7CAC2068D2BC001E9D1C /* Tool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tool.cpp; path = Algorithm/Tool/Tool.cpp; sourceTree = "<group>"; };
 		B45C7CAD2068D2BC001E9D1C /* Tool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Tool.hpp; path = Algorithm/Tool/Tool.hpp; sourceTree = "<group>"; };
-		B45C7CAF2068D31D001E9D1C /* hq02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hq02.cpp; path = Topic/Water/hq02.cpp; sourceTree = "<group>"; };
-		B45C7CB02068D31D001E9D1C /* hq02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = hq02.hpp; path = Topic/Water/hq02.hpp; sourceTree = "<group>"; };
+		B487294B2078C804007A7B7D /* hq02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hq02.cpp; path = Topic/Water/hq/hq02/hq02.cpp; sourceTree = "<group>"; };
+		B487294C2078C804007A7B7D /* hq02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = hq02.hpp; path = Topic/Water/hq/hq02/hq02.hpp; sourceTree = "<group>"; };
+		B487294E2078C810007A7B7D /* ThreeNumSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreeNumSort.cpp; path = Topic/Water/am/base/ThreeNumSort.cpp; sourceTree = "<group>"; };
+		B487294F2078C810007A7B7D /* ThreeNumSort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ThreeNumSort.hpp; path = Topic/Water/am/base/ThreeNumSort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +101,8 @@
 		B45C7CA82068D15D001E9D1C /* Water */ = {
 			isa = PBXGroup;
 			children = (
-				B45C7CB22068D383001E9D1C /* hq02 */,
+				B487294A2078C725007A7B7D /* hq */,
+				B48729452078C69C007A7B7D /* am */,
 			);
 			name = Water;
 			sourceTree = "<group>";
@@ -106,10 +110,35 @@
 		B45C7CB22068D383001E9D1C /* hq02 */ = {
 			isa = PBXGroup;
 			children = (
-				B45C7CB02068D31D001E9D1C /* hq02.hpp */,
-				B45C7CAF2068D31D001E9D1C /* hq02.cpp */,
+				B487294B2078C804007A7B7D /* hq02.cpp */,
+				B487294C2078C804007A7B7D /* hq02.hpp */,
 			);
 			name = hq02;
+			sourceTree = "<group>";
+		};
+		B48729452078C69C007A7B7D /* am */ = {
+			isa = PBXGroup;
+			children = (
+				B48729462078C6AE007A7B7D /* base */,
+			);
+			name = am;
+			sourceTree = "<group>";
+		};
+		B48729462078C6AE007A7B7D /* base */ = {
+			isa = PBXGroup;
+			children = (
+				B487294E2078C810007A7B7D /* ThreeNumSort.cpp */,
+				B487294F2078C810007A7B7D /* ThreeNumSort.hpp */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		B487294A2078C725007A7B7D /* hq */ = {
+			isa = PBXGroup;
+			children = (
+				B45C7CB22068D383001E9D1C /* hq02 */,
+			);
+			name = hq;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45C7C932068BB4C001E9D1C /* main.cpp in Sources */,
+				B48729502078C810007A7B7D /* ThreeNumSort.cpp in Sources */,
 				B45C7CAE2068D2BC001E9D1C /* Tool.cpp in Sources */,
-				B45C7CB12068D31D001E9D1C /* hq02.cpp in Sources */,
+				B487294D2078C804007A7B7D /* hq02.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
