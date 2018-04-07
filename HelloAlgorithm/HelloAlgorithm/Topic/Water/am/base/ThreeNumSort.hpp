@@ -9,7 +9,7 @@
 #ifndef ThreeNumSort_hpp
 #define ThreeNumSort_hpp
 
-#include <stdio.h>
+#include <iostream>
 
 class ThreeNumSort {
 public:

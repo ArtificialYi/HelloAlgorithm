@@ -8,9 +8,10 @@
 
 #include <iostream>
 #include "hq02.hpp"
+#include "ThreeNumSort.hpp"
 
 int main(int argc, const char * argv[]) {
-    Hq02 * hq02 = new Hq02();
-    int res = hq02->main();
+    ThreeNumSort * threeNumSort = new ThreeNumSort();
+    int res = threeNumSort->main();
     return res;
 }

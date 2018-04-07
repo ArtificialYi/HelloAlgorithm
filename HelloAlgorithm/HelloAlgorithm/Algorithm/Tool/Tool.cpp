@@ -22,3 +22,8 @@ int Tool::repetitionNum(int *a, int n, int minNum) {
     }
     return res;
 }
+
+std::string Tool::scaleConvert(std::string str, int preRadix, int ptrRadix) {
+    static std::string staticStr = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    return staticStr;
+}
