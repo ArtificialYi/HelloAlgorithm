@@ -7,11 +7,14 @@
 //
 
 #include <iostream>
-#include "hq02.hpp"
-#include "ThreeNumSort.hpp"
+#include "Algorithm/Tool/Tool.hpp"
+#include "BinaryConvert.hpp"
 
-int main(int argc, const char * argv[]) {
-    ThreeNumSort * threeNumSort = new ThreeNumSort();
-    int res = threeNumSort->main();
-    return res;
+#define N_MAX 255
+#define MAX 256
+#define BIT_MAX 8
+
+int main() {
+    BinaryConvert * tmpObj = new BinaryConvert();
+    return tmpObj->main();
 }

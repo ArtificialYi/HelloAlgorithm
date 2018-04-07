@@ -9,15 +9,17 @@
 #ifndef Tool_hpp
 #define Tool_hpp
 
-#include <stdio.h>
+#include <iostream>
 #include <string>
+#include <cstdlib>
+#include <cstdio>
 
 class Tool {
 public:
     // 判断数组中循环的数的个数
     static int repetitionNum(int *a, int n, int minNum);
-    // 将十进制转化为二进制
-    static std::string scaleConvert(std::string str, int preRadix, int ptrRadix);
+    // 数字转二进制
+    static std::string int2binary(int num);
 };
 
 #endif /* Tool_hpp */

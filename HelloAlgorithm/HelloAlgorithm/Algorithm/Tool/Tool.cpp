@@ -23,7 +23,15 @@ int Tool::repetitionNum(int *a, int n, int minNum) {
     return res;
 }
 
-std::string Tool::scaleConvert(std::string str, int preRadix, int ptrRadix) {
-    static std::string staticStr = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    return staticStr;
+std::string Tool::int2binary(int num) {
+    std::bitset<32> tmpBit (num);
+    std::string tmpStr = tmpBit.to_string();
+    std::string resStr = "0";
+    for (int i = 0; i < 32; ++i) {
+        if (tmpStr[i] != '0') {
+            resStr = tmpStr.substr(i);
+            break;
+        }
+    };
+    return resStr;
 }
